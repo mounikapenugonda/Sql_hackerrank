@@ -1,4 +1,8 @@
 ### Sql_hackerrank questions and answers for basic sql
-| Attempt | #1 | #2 |
-| :---: | :---: | :---: |
-| Seconds | 301 | 283 |
+| fIELD | tYPE |
+| :---: | :---: |
+| ID | NUMBER |
+| NAME | VARCHAR(20) |
+| COUNTRYCODE | VARCHAR(20) |
+| DISTRICT | VARCHAR(20) |
+|POPULATION | NUMBER |
