@@ -14,4 +14,7 @@ The CITY table is described as follows:
     
 ### Revising the Select Query -2
 Q2.
-
+@settings {
+  font-size: 100;
+}
+hi
