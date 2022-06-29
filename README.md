@@ -1,5 +1,5 @@
 ### Sql_hackerrank questions and answers for basic sql
-| fIELD | tYPE |
+| FIELD | TYPE |
 | :---: | :---: |
 | ID | NUMBER |
 | NAME | VARCHAR(20) |
