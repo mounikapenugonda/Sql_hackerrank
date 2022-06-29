@@ -120,13 +120,29 @@ The STATION table is described as follows:
 | STATE | VARCHAR(20) |
 | LAT_N | NUMBER |
 | LONG_W | NUMBER |
+
 where LAT_N is the northern latitude and LONG_W is the western longitude.
 For example, if there are three records in the table with CITY values 'New York', 'New York', 'Bengalaru', there are 2 different city names: 'New York' and 'Bengalaru'. The query returns , because total number of records - number of unique city names = 3-2 =1
 
     Solution : SELECT COUNT(CITY) - COUNT(DISTINCT(CITY)) FROM STATION;
 
+### WEATHER OBSERVATION STATION 6
+Q10. Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
 
+Input Format
 
+The STATION table is described as follows:
+| FIELD | TYPE |
+| :---: | :---: |
+| ID | NUMBER |
+| CITY | VARCHAR(20) |
+| STATE | VARCHAR(20) |
+| LAT_N | NUMBER |
+| LONG_W | NUMBER |
+
+where LAT_N is the northern latitude and LONG_W is the western longitude.
+
+    Solution :SELECT DISTINCT(CITY) FROM STATION WHERE CITY LIKE 'A%' OR CITY LIKE 'E%' OR CITY LIKE 'I%' OR CITY LIKE 'O%' OR CITY LIKE 'U%' ORDER BY CITY ASC;
 
 
 
