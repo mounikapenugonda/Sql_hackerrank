@@ -1,3 +1,4 @@
+### Revising the Select Query -1
 Q1: Query all columns for all American cities in the CITY table with populations larger than 100000. The CountryCode for America is USA.
 
 The CITY table is described as follows:
@@ -10,4 +11,7 @@ The CITY table is described as follows:
 |POPULATION | NUMBER |
 
     Solution : SELECT * FROM CITY WHERE POPULATION > 100000 AND COUNTRYCODE = "USA";
+    
+### Revising the Select Query -2
+Q2.
 
