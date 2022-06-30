@@ -146,7 +146,96 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
     Solution 2:SELECT DISTINCT CITY FROM STATION WHERE CITY LIKE 'A%' OR CITY LIKE 'E%' OR CITY LIKE 'I%' OR CITY LIKE 'O%' OR CITY LIKE 'U%'
     Solution 3: SELECT DISTINCT(CITY) FROM STATION WHERE CITY LIKE 'A%' OR CITY LIKE 'E%' OR CITY LIKE 'I%' OR CITY LIKE 'O%' OR CITY LIKE 'U%' ORDER BY CITY ASC;
     
+### WEATHER OBSERVATION STATION 7
+Q11.Query the list of CITY names ending with vowels (a, e, i, o, u) from STATION. Your result cannot contain duplicates.
 
+Input Format
+
+The STATION table is described as follows:
+| FIELD | TYPE |
+| :---: | :---: |
+| ID | NUMBER |
+| CITY | VARCHAR(20) |
+| STATE | VARCHAR(20) |
+| LAT_N | NUMBER |
+| LONG_W | NUMBER |
+
+where LAT_N is the northern latitude and LONG_W is the western longitude.
+
+    Solution 1 : SELECT DISTINCT CITY FROM STATION WHERE CITY LIKE '%A' OR CITY LIKE '%E' OR CITY LIKE '%I' OR CITY LIKE '%O' OR CITY LIKE '%U';
+    Solution 2 : SELECT DISTINCT CITY FROM STATION WHERE CITY LIKE '%A' OR CITY LIKE '%E' OR CITY LIKE '%I' OR CITY LIKE '%O' OR CITY LIKE '%U' ORDER BY CITY ASC;
+    Solution 3 : SELECT DISTINCT CITY FROM STATION WHERE CITY LIKE '%A' OR CITY LIKE '%E' OR CITY LIKE '%I' OR CITY LIKE '%O' OR CITY LIKE '%U' ORDER BY CITY DESC;
+    
+### WEATHER OBSERVATION STATION 8
+Q12.Query the list of CITY names from STATION which have vowels (i.e., a, e, i, o, and u) as both their first and last characters. Your result cannot contain duplicates.
+
+Input Format
+
+The STATION table is described as follows:
+| FIELD | TYPE |
+| :---: | :---: |
+| ID | NUMBER |
+| CITY | VARCHAR(20) |
+| STATE | VARCHAR(20) |
+| LAT_N | NUMBER |
+| LONG_W | NUMBER |
+
+where LAT_N is the northern latitude and LONG_W is the western longitude.
+
+    Solution : SELECT DISTINCT CITY FROM STATION WHERE (CITY LIKE 'A%' OR CITY LIKE 'E%' OR CITY LIKE 'I%' OR CITY LIKE 'O%' OR CITY LIKE 'U%' ) AND (CITY LIKE '%A' OR CITY LIKE '%E' OR CITY LIKE '%I' OR CITY LIKE '%O' OR CITY LIKE '%U' );
+    
+### WEATHER OBSERVATION STATION 9
+Q13.Query the list of CITY names from STATION that do not start with vowels. Your result cannot contain duplicates.
+
+Input Format
+
+The STATION table is described as follows:
+| FIELD | TYPE |
+| :---: | :---: |
+| ID | NUMBER |
+| CITY | VARCHAR(20) |
+| STATE | VARCHAR(20) |
+| LAT_N | NUMBER |
+| LONG_W | NUMBER |
+
+where LAT_N is the northern latitude and LONG_W is the western longitude.
+
+    Solution : SELECT DISTINCT CITY FROM STATION WHERE CITY NOT LIKE 'A%' AND CITY NOT LIKE 'E%' AND CITY NOT LIKE 'I%' AND CITY NOT LIKE 'O%' AND CITY NOT LIKE 'U%' ;
+
+### WEATHER OBSERVATION STATION 10
+Q14.Query the list of CITY names from STATION that do not end with vowels. Your result cannot contain duplicates.
+
+Input Format
+
+The STATION table is described as follows:
+| FIELD | TYPE |
+| :---: | :---: |
+| ID | NUMBER |
+| CITY | VARCHAR(20) |
+| STATE | VARCHAR(20) |
+| LAT_N | NUMBER |
+| LONG_W | NUMBER |
+
+where LAT_N is the northern latitude and LONG_W is the western longitude.
+
+    Solution :SELECT DISTINCT CITY FROM STATION WHERE CITY NOT LIKE '%A' AND CITY NOT LIKE '%E' AND CITY NOT LIKE '%I' AND CITY NOT LIKE '%O' AND CITY NOT LIKE '%U' ;
+    
+ ### WEATHER OBSERVATION STATION 11
+Q15.Query the list of CITY names from STATION that either do not start with vowels or do not end with vowels. Your result cannot contain duplicates.
+
+Input Format
+
+The STATION table is described as follows:
+| FIELD | TYPE |
+| :---: | :---: |
+| ID | NUMBER |
+| CITY | VARCHAR(20) |
+| STATE | VARCHAR(20) |
+| LAT_N | NUMBER |
+| LONG_W | NUMBER |
+
+where LAT_N is the northern latitude and LONG_W is the western longitude.
+    Solution :
 
 
 
