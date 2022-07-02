@@ -26,5 +26,9 @@ Q3. Query all columns (attributes) for every row in the CITY table.
  Q4. Query all columns for a city in CITY with the ID 1661.
  
      Solution : SELECT * FROM CITY WHERE ID = 1661;
+ ### Average Population
+ Q5.Query the average population for all cities in CITY, rounded down to the nearest integer.
+ 
+    Solution : select round(avg(population)) from city;
  
   
