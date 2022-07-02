@@ -30,5 +30,13 @@ Q3. Query all columns (attributes) for every row in the CITY table.
  Q5.Query the average population for all cities in CITY, rounded down to the nearest integer.
  
     Solution : select round(avg(population)) from city;
+ ### Revising Aggregations - The Count Function
+ Q6.Query a count of the number of cities in CITY having a Population larger than 100000.
  
+    Solution : SELECT COUNT(POPULATION) FROM CITY WHERE POPULATION > 100000;
+ ### Revising Aggregations - The Sum Function
+ Q7.Query the total population of all cities in CITY where District is California.
+ 
+    Solution : SELECT SUM(POPULATION) FROM CITY WHERE DISTRICT = 'California';
+    
   
