@@ -52,6 +52,5 @@ Q3. Query all columns (attributes) for every row in the CITY table.
 Q10. Query the difference between the maximum and minimum populations in CITY.
   
     Solution :SELECT MAX(POPULATION) - MIN(POPULATION) FROM CITY;
-### The Blunder
-Q11.    
+  
   
