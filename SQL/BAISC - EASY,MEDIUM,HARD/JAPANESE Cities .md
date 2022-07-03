@@ -53,5 +53,7 @@ The CITY and COUNTRY tables are described as follows:
 
     Solution 1: select sum(city.population) from country inner join city on city.CountryCode = COUNTRY.Code where country.continent = 'asia'; 
     sOLUTION 2: select sum(city.population) from CITY inner join COUNTRY on city.CountryCode = COUNTRY.Code where country.continent = 'asia';
-    both are same just inner join changed
+both are same just inner join changed
+    output :: 27028484
+
     
