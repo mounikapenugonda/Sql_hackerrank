@@ -52,8 +52,15 @@ The CITY and COUNTRY tables are described as follows:
 | CODE2 | VARCHAR(20) |
 
     Solution 1: select sum(city.population) from country inner join city on city.CountryCode = COUNTRY.Code where country.continent = 'asia'; 
-    sOLUTION 2: select sum(city.population) from CITY inner join COUNTRY on city.CountryCode = COUNTRY.Code where country.continent = 'asia';
+    Solution 2: select sum(city.population) from CITY inner join COUNTRY on city.CountryCode = COUNTRY.Code where country.continent = 'asia';
 both are same just inner join changed
     output :: 27028484
+### African Cities
+Q3. Given the CITY and COUNTRY tables, query the names of all cities where the CONTINENT is 'Africa'.
 
+Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
+use the above tables for city and country
+
+    Solution : select city.name from country inner join city on city.CountryCode = COUNTRY.Code where country.continent = 'africa'
+    
     
