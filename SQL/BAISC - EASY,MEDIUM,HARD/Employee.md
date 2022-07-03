@@ -7,6 +7,7 @@ Input Format:::
 | ID | Integer |
 | Name | String |
 | Marks | Integer|
+
 The name column only contains uppercase (A-Z) and lowercase (a-z) letters. 
 where employee_id is an employee's ID number, name is their name, months is the total number of months they've been working for the company, and salary is their 
 monthly salary.
