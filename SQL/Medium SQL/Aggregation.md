@@ -29,5 +29,7 @@ minimum and maximum values of Western Longitude (LONG_W) in STATION.
 
 Query the Euclidean Distance between points P1 and P2 and format your answer to display 4 decimal digits.
   
-    Solution :
+    Solution :select round(sqrt(pow(max(lat_n)- min(lat_n),2)+pow(max(long_w)- min(long_w),2)),4) from station;
+    Output : 184.1616
+    Euclidean distance ::d(p,q)={\sqrt {(q_{1}-p_{1})^{2}+(q_{2}-p_{2})^{2}}}
 
