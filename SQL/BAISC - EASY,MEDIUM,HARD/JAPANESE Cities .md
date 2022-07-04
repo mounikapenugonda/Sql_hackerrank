@@ -61,6 +61,14 @@ Q3. Given the CITY and COUNTRY tables, query the names of all cities where the C
 Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
 use the above tables for city and country
 
-    Solution : select city.name from country inner join city on city.CountryCode = COUNTRY.Code where country.continent = 'africa'
-    
+    Solution : select city.name from country inner join city on city.CountryCode = COUNTRY.Code where country.continent = 'africa';
+### Average Population of Each Continent
+Q4. Given the CITY and COUNTRY tables, query the names of all the continents (COUNTRY.Continent) and their respective average city populations (CITY.Population) rounded down to the nearest integer.
+
+Note: CITY.CountryCode and COUNTRY.Code are matching key columns. \N
+use the above tables for city and country
+
+    Solution : SELECT COUNTRY.CONTINENT, FLOOR(AVG(CITY.POPULATION)) FROM COUNTRY, CITY WHERE  CITY.CountryCode = COUNTRY.Code GROUP BY COUNTRY.CONTINENT;
+    floor : function rounds the number, towards zero, always down.
+
     
