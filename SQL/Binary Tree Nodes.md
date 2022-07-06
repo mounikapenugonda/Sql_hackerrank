@@ -44,11 +44,11 @@ The Binary Tree below illustrates the sample:
                         END
               FROM BST ORDER BY N;
 
-EXplanation : line by line
-    SELECT N                                        -- it will give values of N
-    CASE                                           -- it is like if -then - else 
-        WHEN P IS NULL THEN 'Root'                 -- when p is null it will treat that as root node
-        WHEN N IN (SELECT P FROM BST) THEN 'Inner' -- when the N value present/ matches in P = inner node
-        ELSE 'Leaf'                                -- else all are nodes - leaf
-    END
-    FROM BST ORDER BY N;                            -- from the table name with order of N values.
+        EXplanation : line by line
+            SELECT N                                        -- it will give values of N
+            CASE                                           -- it is like if -then - else 
+                WHEN P IS NULL THEN 'Root'                 -- when p is null it will treat that as root node
+                WHEN N IN (SELECT P FROM BST) THEN 'Inner' -- when the N value present/ matches in P = inner node
+                ELSE 'Leaf'                                -- else all are nodes - leaf
+            END
+            FROM BST ORDER BY N;                            -- from the table name with order of N values.
